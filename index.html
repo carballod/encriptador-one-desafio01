@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador - Alura ONE</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <img src="imagenes/Vector.png" class="logo" alt="Logo de Alura con la inicial de la letra a.">
+        </div>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <section class="encriptador">
+                <div class="texto-en-area">
+                    <textarea id="texto" placeholder="Ingrese el texto aqui"></textarea>
+
+                    <div class="texto-info">
+                        <img src="imagenes/Alert.png">
+                        <p id="advertencia">Solo letras minusculas y sin acentos</p>
+                    </div>
+                
+    
+                    <div class="botones">
+                        <button  id="encri" class="encriptar">Encriptar</button>
+                        <button id="desencri" class="desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </section>
+
+
+        <section class="resultado-section">
+            <div class="contenido-no-resuelto" id="noResuelto">
+                <div class="resultado-imagen">
+                    <img src="imagenes/Muñeco.png" class="imagen-resultado" alt="Muneco de Alura">
+                </div>
+
+                <p>Ningún mensaje fue encontrado</p>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+
+            <div class="contenido-resuelto" id="resuelto">
+                <textarea name="texto_resultado" id="textoResultado" disabled></textarea>
+                <button id="copiar" type="button">Copiar</button>
+            </div>
+
+        </section>
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
